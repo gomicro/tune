@@ -98,7 +98,7 @@ func (cws *CWStatter) Counter(sampleRate float32, bucket string, n ...int) {
 		datums = append(datums, d)
 	}
 
-	go cws.svc.PutMetricData(&cloudwatch.PutMetricDataInput{
+	go cws.svc.PutMetricData(&cloudwatch.PutMetricDataInput{ //nolint,errcheck
 		Namespace:  &cws.prefix,
 		MetricData: datums,
 	})
@@ -127,7 +127,7 @@ func (cws *CWStatter) Timing(sampleRate float32, bucket string, d ...time.Durati
 		datums = append(datums, d)
 	}
 
-	go cws.svc.PutMetricData(&cloudwatch.PutMetricDataInput{
+	go cws.svc.PutMetricData(&cloudwatch.PutMetricDataInput{ //nolint,errcheck
 		Namespace:  &cws.prefix,
 		MetricData: datums,
 	})
@@ -159,7 +159,7 @@ func (cws *CWStatter) Gauge(sampleRate float32, bucket string, value ...string) 
 		}
 	}
 
-	go cws.svc.PutMetricData(&cloudwatch.PutMetricDataInput{
+	go cws.svc.PutMetricData(&cloudwatch.PutMetricDataInput{ //nolint,errcheck
 		Namespace:  &cws.prefix,
 		MetricData: datums,
 	})
