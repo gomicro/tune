@@ -1,4 +1,5 @@
 # github.com/aws/aws-sdk-go v1.30.29
+## explicit
 github.com/aws/aws-sdk-go/aws
 github.com/aws/aws-sdk-go/aws/awserr
 github.com/aws/aws-sdk-go/aws/awsutil
@@ -36,10 +37,12 @@ github.com/aws/aws-sdk-go/service/cloudwatch
 github.com/aws/aws-sdk-go/service/sts
 github.com/aws/aws-sdk-go/service/sts/stsiface
 # github.com/franela/goblin v0.0.0-20200512143142-b260c999b2d7
+## explicit
 github.com/franela/goblin
 # github.com/jmespath/go-jmespath v0.3.0
 github.com/jmespath/go-jmespath
 # github.com/onsi/gomega v1.10.0
+## explicit
 github.com/onsi/gomega
 github.com/onsi/gomega/format
 github.com/onsi/gomega/internal/assertion
@@ -53,6 +56,7 @@ github.com/onsi/gomega/matchers/support/goraph/node
 github.com/onsi/gomega/matchers/support/goraph/util
 github.com/onsi/gomega/types
 # github.com/peterbourgon/g2s v0.0.0-20170223122336-d4e7ad98afea
+## explicit
 github.com/peterbourgon/g2s
 # golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 golang.org/x/net/html
